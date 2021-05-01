@@ -16,7 +16,9 @@ const Home = () => {
         <div className="row">
                {
                    events.map(event => <Body event={event}></Body> )
+                   
                }
+              
         </div>
     );
 };

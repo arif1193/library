@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 
 
 const Admin = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const [imageURL, setImageURL] = useState(null)
 
   const onSubmit = data => {
